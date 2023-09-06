@@ -21,9 +21,19 @@ com_port = f.read()
 print("In COM_PORT.txt: " + str(com_port))
 
 
+#Get time and date <---- If something breaks here, attempt Try-Catch to install the python lib. If already installed, nothing bad will happen. 
+
+import datetime
+ 
+# using now() to get current time
+current_time = datetime.datetime.now() #get current time 
+temp = str(current_time) #get 
+temp = temp[0:10] + "_" +temp[11:13] + "-" + temp[14:16] + "-" + temp[17:19]
+
+
 #com_port = #"COM17" #'/dev/ttyACM0'
 baud = 9600
-filename = "test.csv"
+filename = temp + ".csv" #"test.csv"
 
 #fig = plt.figure()
 #ax1 = fig.add_subplot(1,1,1)
