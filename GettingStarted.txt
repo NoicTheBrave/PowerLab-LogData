@@ -22,8 +22,18 @@ How to Install Python:
 +4.00000     deg
 +0.00000      KW
 ****************
+9) When you are done with the program, please do in the application CTRL + C to close the program and stop the data logging. Your logged data will be stored into a .csv in the same file directory. 
 
-If you do not see this, please verify that all previous steps have been preformed correctly. If this still does not work, please contact your lab supervisor.  
+If you do not see this or had any additional issues, please verify that all previous steps have been preformed correctly. If this still does not work, please contact your lab supervisor. 
+
+***WARNING***
+At the time of writing this, .csv files are named "test.csv". For future implementation, if no additional libraries need to be installed (or it can be automated from running the python script easily), they may be named by the time and date the start of the program was ran, allowing multiple runs to be stored into differen .csv files. If this feature is not yet implemented, if you want your ***LAB DATA OVER-WRITTEN***, please change the name of the .csv file after a run.
+
+Additional Notes: 
+* Please note that if anti-virus software is installed, it may try and block the operation. Please allow the program to run and log the data. 
+* On occation, when trying to close out of the application, it will ask if you want to close out of the application in the terminal. Assuming you do want to close it, when prompted with "Terminate batch job?" Enter "Y" and press enter to close. 
+
+ 
 
 -----Day-to-Day Operations: -----
 For Normal Operations, you should be able to plug the sensor into your comptuer and run the start.bat file. If this fails, Please refer to the "Standard Initial Operating Set-Up" section. If thise fails, please contact your lab supervisor. 
