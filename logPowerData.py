@@ -17,15 +17,18 @@ from matplotlib import style
 
 #read text file
 f = open("COM_PORT.txt", "r")
-print(f.read())
+com_port = f.read()
+print("In COM_PORT.txt: " + str(com_port))
 
 
-com_port = "COM17" #'/dev/ttyACM0'
+#com_port = #"COM17" #'/dev/ttyACM0'
 baud = 9600
 filename = "test.csv"
 
 #fig = plt.figure()
 #ax1 = fig.add_subplot(1,1,1)
+
+
 
 
 '''
