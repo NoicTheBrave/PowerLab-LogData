@@ -1,0 +1,37 @@
+Author: Nicholas Chorette
+Date: 9/6/2023
+Purpose: To Explain how to install and get running the python script that allows data to be logged for the Power Lab at The University of Tulsa, Rayzor Hall, made specifically to aid my professor, Douglass Jussaume. 
+
+Notice: Please do NOT plug in the USB device sensor until told otherwise. 
+How to Install Python: 
+
+-----For Windows 10 & 11: -----
+1) In the Search bar on the bottom left, search "Microsoft Store"
+2) Within the Store, search "Python". When testing this, we used Python 3.11, the newest version at the time. Python 3.10 also still works. Install one of these before proceeding. 
+3) Once Python is installed, please close out of the Microsoft Store application.
+
+-----Standard Initial Operating Set-Up: -----
+4) Using the search bar in the bottom left of your screen, search and open the Device Manager. Look for "Ports (COM & LPT") and click the drop-down menu for that. You will see several COM ports. 
+5) At this point, take note of the currently existing COM ports avaliable. 
+6) Plug in the USB device. If it is the first time plugging it in, it may take a minute or two for it to configure properly to your computer. You should eventually notice a new COM port appear. This should be the sensor. Take note of this new COM port. 
+7) Go to the folder where this GettingStarted file is located. In the COM_PORT.txt file, enter in the COM port of the sensor into this file. For example, on my computer, the COM port is COM17, thus I enter into the text file "COM17" on the first line, nothing more, nothing less. Save the text file and close it. 
+8) Now, finally, run the start.bat file. This will open a command prompt with a blank screen for a few seconds while the program is gettings started. From there, the program, if it is working, should begin logging data such as the example below: 
+****************
++0.00000     rpm
+-0.01417     N-m
++4.00000     deg
++0.00000      KW
+****************
+
+If you do not see this, please verify that all previous steps have been preformed correctly. If this still does not work, please contact your lab supervisor.  
+
+-----Day-to-Day Operations: -----
+For Normal Operations, you should be able to plug the sensor into your comptuer and run the start.bat file. If this fails, Please refer to the "Standard Initial Operating Set-Up" section. If thise fails, please contact your lab supervisor. 
+
+-------------------------------------------------------------------------------------------------------------------
+-----Non-Windows Instalation-----
+If you are using a Unix-based environment (Linux, Mac), I will trust by now that you know how to install python.
+If not, please talk to your lab manager after attempting to install it here: https://www.python.org/downloads/
+For Windows Users, I will assume you are using Windows 10 or 11 for this operation. If you are using a different operating system, I recommend installing python through here: https://www.python.org/downloads/
+
+To save time, it is recommended to use the Lab computer to collect this data and share it to yourself and your team. Please make sure that all required programs are installed onto the lab computer, seeing that from time-to-time the lab computers are upgraded, changed, etc. 
